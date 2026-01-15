@@ -5,7 +5,7 @@
 // require('./functions.php');
 
 //2016-03-25 新增fttps
-function curl_get_https($url, $data=array(), $header=array(), $timeout=30){ 
+function curl_get_https($url, $data=array(), $header=array(), $timeout=30){ //123
 	$ch = curl_init(); 
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查 
 	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2); // 从证书中检查SSL加密算法是否存在 
